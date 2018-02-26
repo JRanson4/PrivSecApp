@@ -1,0 +1,69 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.jrans.privsecapp.DashFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.project.jrans.privsecapp.MainActivity"
+        tools:showIn="@layout/app_bar_main">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="205dp"
+                android:text="PrivSec protection is disabled"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/flayMain"
+            android:layout_width="0dp"
+            android:layout_height="493dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="103dp"
+                android:layout_height="95dp"
+                android:layout_above="@+id/textView3"
+                android:layout_gravity="center"
+                android:layout_marginBottom="19dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layout_anchor="@+id/include"
+                app:layout_anchorGravity="center"
+                app:rippleColor="@color/colorAccent"
+                app:srcCompat="@drawable/power_button"
+                tools:layout_editor_absoluteX="137dp" />
+        </FrameLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

@@ -31,6 +31,7 @@
         android:layout_gravity="center"
         android:layout_margin="@dimen/fab_margin"
         android:orientation="vertical"
+        android:visibility="gone"
         app:layout_anchor="@+id/include"
         app:layout_anchorGravity="center"
         app:rippleColor="@color/colorAccent"
