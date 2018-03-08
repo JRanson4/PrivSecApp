@@ -63,6 +63,13 @@
                 app:rippleColor="@color/colorAccent"
                 app:srcCompat="@drawable/power_button"
                 tools:layout_editor_absoluteX="137dp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="ToggleButton" />
         </FrameLayout>
     </android.support.constraint.ConstraintLayout>
 

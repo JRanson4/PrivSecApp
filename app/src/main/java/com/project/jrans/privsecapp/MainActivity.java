@@ -99,7 +99,12 @@ public class MainActivity extends AppCompatActivity
             exit.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(exit);
         } else if (id == R.id.nav_share) {
-
+            Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
+            String shareBody = "PrivSecApp is a fantastic privacy and security application that protects you from malware, adware and spyware, you can download it from INSERT LINK!";
+            sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Download PrivSecApp from github.com/JRanson4/");
+            sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+            startActivity(Intent.createChooser(sharingIntent, "Share via"));
         } else if (id == R.id.nav_send) {
 
         }
